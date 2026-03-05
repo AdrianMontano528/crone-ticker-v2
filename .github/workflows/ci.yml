@@ -56,6 +56,10 @@ jobs:
           echo "APP_NAME: ${{ env.APP_NAME }}"
           echo "BUILD_DIR: ${{ env.BUILD_DIR }}"
 
+      - name: Show github secrets
+        run: |
+          echo "API_KEY: ${{ secrets.API_KEY }}" 
+
       - name: Build
         run: npm run build
         env:
