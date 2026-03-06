@@ -66,8 +66,12 @@ jobs:
         run: |
           echo ${{ toJSON(github) }} 
 
+      - run: npm ci
+
       - name: Build
         run: npm run build
+
+
         env:
           APP_VERSION: "3.0.0"
 
