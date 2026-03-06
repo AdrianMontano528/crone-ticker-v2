@@ -64,7 +64,7 @@ jobs:
 
       - name: Show github functions
         run: |
-          echo ${{ toJSON(github) }}" 
+          echo ${{ toJSON(github) }} 
 
       - name: Build
         run: npm run build
